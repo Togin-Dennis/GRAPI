@@ -1,4 +1,4 @@
-<h1 align="center">🎮 Game Radar API (GRAPI)</h1>
+<h1 align="center">🎮 Game Radar API</h1>
 <h4 align="center">Free JSON APIs for discovering free games, DLCs, apps, and gaming deals.</h4>
 
 <p align="center">
@@ -8,54 +8,48 @@
 
 ---
 
-## 🚀 Overview
+<p align="center">
+  <img src="https://img.shields.io/github/repo-size/Togin-Dennis/GameRadarApi?color=green&label=Repo%20Size">
 
-Game Radar API (GRAPI) provides **open and static JSON endpoints** for:
-
-- 🕹️ Free Games  
-- 🧩 Free DLCs  
-- 📱 Free Apps  
-- 💸 Top Discounts  
-- 🎁 Prime Gaming Offers  
-- 📰 Latest Game News  
-
-This API is perfect for:
-- Game deal trackers  
-- Bot developers  
-- Web or mobile apps  
-- Automation scripts  
-- Educational & portfolio projects
-
----
-
-## 🔑 Get Started
-
-🔹 **Click the button below to explore available API endpoints and get sample code:**
-
-<p align="left">
-  <a href="https://togin-dennis.github.io/GRAPI">
-    <img src="https://img.shields.io/badge/Get%20API%20Key-Terminal--UI-blue?style=for-the-badge&logo=powerbi" alt="Get API Key">
-  </a>
+  <img src="https://img.shields.io/github/last-commit/Togin-Dennis/GameRadarApi?color=purple">
 </p>
 
 ---
 
-## 📦 Available API Endpoints
+## 📦 About
 
-| Endpoint File      | Description                          |
-|--------------------|--------------------------------------|
-| `FreeGame.json`    | Limited-time free games              |
-| `Apps.json`        | Free applications                    |
-| `DLC.json`         | Free downloadable content            |
-| `TopDiscount.json` | Top store-wide discounts             |
-| `PrimeGaming.json` | Amazon Prime free games              |
-| `News.json`        | Gaming headlines & news              |
+Game Radar API is a **static JSON-based API** that delivers up-to-date information on:
+
+- 🎮 Free games from multiple platforms  
+- 🧩 Free DLCs and apps  
+- 💸 Top discounts on popular games  
+- 📰 Game-related news  
+- 🎁 Prime Gaming rewards  
+
+All data is updated frequently and served directly via **GitHub Pages** — no rate limits, no auth needed.
 
 ---
 
-## 🧩 Code Examples
+## 🚀 Available API Endpoints
 
-> Replace `API_URL_HERE` with the actual endpoint link from the [API Terminal UI](https://togin-dennis.github.io/GRAPI).
+| Type            | URL (hosted via GitHub Pages) |
+|-----------------|-------------------------------|
+| 🆓 Free Games    | `/FreeGame.json`              |
+| 🧩 Free DLC      | `/DLC.json`                   |
+| 📱 Free Apps     | `/Apps.json`                  |
+| 🔥 Top Discounts | `/TopDiscount.json`           |
+| 🎁 Prime Gaming | `/PrimeGaming.json`           |
+| 📰 News          | `/News.json`                  |
+
+> ✅ Visit: `https://togin-dennis.github.io/GRAPI/FreeGame.json` (example)
+
+---
+
+
+## 📚 Usage Examples
+
+> Replace `API_URL_HERE` with one of the URLs like:  
+> `https://togin-dennis.github.io/GRAPI/FreeGame.json`
 
 ---
 
@@ -66,3 +60,76 @@ useEffect(() => {
     .then(res => res.json())
     .then(data => console.log(data));
 }, []);
+```
+### 🟨 JavaScript (Node.js)
+```javascript
+const https = require('https');
+
+https.get('API_URL_HERE', (res) => {
+  let data = '';
+  res.on('data', chunk => data += chunk);
+  res.on('end', () => console.log(JSON.parse(data)));
+});
+
+```
+### 🐍 Python
+```python
+import requests
+
+response = requests.get("API_URL_HERE")
+print(response.json())
+```
+### ☕ Java (Using HttpURLConnection)
+```java
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class GameRadarAPI {
+  public static void main(String[] args) throws Exception {
+    URL url = new URL("API_URL_HERE");
+    HttpURLConnection con = (HttpURLConnection) url.openConnection();
+    con.setRequestMethod("GET");
+
+    BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+    String inputLine;
+    StringBuffer content = new StringBuffer();
+    while ((inputLine = in.readLine()) != null) {
+      content.append(inputLine);
+    }
+    in.close();
+    System.out.println(content.toString());
+  }
+}
+
+```
+### 🌐 cURL (CLI)
+```bash
+curl API_URL_HERE
+
+```
+### 🐘 PHP
+```php
+<?php
+$response = file_get_contents("API_URL_HERE");
+$data = json_decode($response, true);
+print_r($data);
+?>
+
+
+```
+### 🧪 C# (using HttpClient)
+```csharp
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+class Program {
+  static async Task Main() {
+    HttpClient client = new HttpClient();
+    string result = await client.GetStringAsync("API_URL_HERE");
+    Console.WriteLine(result);
+  }
+}
+
