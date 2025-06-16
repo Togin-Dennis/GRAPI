@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GRAPI/static/css/main.b51023de.css",
+    "main.js": "/GRAPI/static/js/main.140eabb2.js",
+    "static/js/453.a8704c70.chunk.js": "/GRAPI/static/js/453.a8704c70.chunk.js",
+    "index.html": "/GRAPI/index.html",
+    "main.b51023de.css.map": "/GRAPI/static/css/main.b51023de.css.map",
+    "main.140eabb2.js.map": "/GRAPI/static/js/main.140eabb2.js.map",
+    "453.a8704c70.chunk.js.map": "/GRAPI/static/js/453.a8704c70.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b51023de.css",
+    "static/js/main.140eabb2.js"
+  ]
+}
