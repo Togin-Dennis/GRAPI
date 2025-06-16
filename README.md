@@ -41,7 +41,7 @@ All data is updated frequently and served directly via **GitHub Pages** — no r
 | 🎁 Prime Gaming | `/PrimeGaming.json`           |
 | 📰 News          | `/News.json`                  |
 
-> ✅ Visit: `https://togin-dennis.github.io/GRAPI/FreeGame.json` (example)
+> ✅ Visit: `https://raw.githubusercontent.com/Togin-Dennis/GameRadarApi/refs/heads/main/FreeGame.json` (example)
 
 ---
 
