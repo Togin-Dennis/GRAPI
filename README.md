@@ -3,7 +3,7 @@
 
 <p align="center">
   <b>⚡ Simple • 🧩 Static • 🔓 Open • 🌍 Public</b><br><br>
-  <a href="https://togin-dennis.github.io/GRAPI"><img src="https://img.shields.io/badge/Get-API%20Key-blue?style=for-the-badge&logo=github" alt="Get API Key"></a>
+  <a href="https://togin-dennis.github.io/GRAPI"><img src="https://img.shields.io/badge/Get-API%20Key-blue?style=for-the-badge&logo=github" alt="Get API"></a>
 </p>
 
 ---
@@ -133,3 +133,19 @@ class Program {
   }
 }
 
+```
+<br/><br/><br/><br/>
+
+## 🖼️ Preview
+<p align="center">
+  <img src="https://github.com/Togin-Dennis/GRAPI/blob/main/screenshot/API%20Home.png?raw=true" alt="Game Radar Banner" width="100%" />
+</p>
+<p align="center">
+  <img src="https://github.com/Togin-Dennis/GRAPI/blob/main/screenshot/API%202.png?raw=true" alt="Game Radar Banner" width="100%" />
+</p>
+<p align="center">
+  <img src="https://github.com/Togin-Dennis/GRAPI/blob/main/screenshot/API%203.png?raw=true" alt="Game Radar Banner" width="100%" />
+</p>
+<p align="center">
+  <img src="https://github.com/Togin-Dennis/GRAPI/blob/main/screenshot/API%204.png?raw=true" alt="Game Radar Banner" width="100%" />
+</p>
