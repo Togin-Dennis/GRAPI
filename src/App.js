@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+// File: src/App.js
+import React, { useState } from 'react';
+import AnimatedLanding from './components/AnimatedLanding';
+import APISection from './components/APISection';
 import './App.css';
 
 function App() {
+  const [showAPI, setShowAPI] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!showAPI ? (
+        <AnimatedLanding onContinue={() => setShowAPI(true)} />
+      ) : (
+        <APISection />
+      )}
     </div>
   );
 }
-
 export default App;
